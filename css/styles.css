@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunitoregular.woff");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/NunitoBold.woff");
+    font-weight: bold;
+}
+
+body {
+    font-family: Nunito,sans-serif;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #4E73DF 0%, #224ABE 100%);
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.logo {
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+}
+
+.menu {
+
+}
+
+.menu-item ul {
+    list-style: none;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.57);
+}
+
+.menu-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.menu-item span {;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.57);
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-search {
+    display: flex;
+    position: relative;
+}
+
+.header-search input {
+    background: #F8F9FC;
+    border-radius: 5px 0px 0px 5px;
+    width: 244px;
+    padding: 7px 10px;
+    border: 0;
+    color: black;
+    font-size: 14px;
+    line-height: 19px;
+    outline: none;
+}
+
+.header-search input::placeholder {
+    color: #B3B3B3;
+}
+
+.header-search button {
+    background: #4B70DC;
+    border-radius: 0px 5px 5px 0px;
+    border: 0;
+    width: 33px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-info {
+    display: flex;
+}
+
+.header-info-actions {
+    padding-right: 3px;
+    border-right: 1px solid #B3B3B3;
+    display: flex;
+    align-items: center;
+}
+
+.header-info-actions svg {
+    margin-right: 17px;
+}
+
+.header-info-actions svg:hover {
+    cursor: pointer;
+}
+
+.header-info-user {
+    display: flex;
+    align-items: center;
+}
+
+.header-info-user:hover {
+    cursor: pointer;
+}
+
+.header-info-user span {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #858796;
+}
+
+.header-info-user-image {
+    background-image: url("../images/user.png");
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+}
+
+.content__commentators {
+    padding: 20px;
+}
+
+.content__commentator-cart {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.content__commentators-box .content__commentator-cart {
+    max-width: 364px;
+    height: 366px;
+}
+
+
+.comment-cart-title {
+    padding: 19px;
+    background-color: #F8F9FC;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3D63D2;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.comment-cart-title.best {
+    text-align: center;
+}
+
+.comment-cart-info {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #858796;
+}
+
+.comment-cart-info.best {
+    padding: 49px 0 30px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-info-image {
+    margin: 0 40px;
+}
+
+.comment-name {
+    font-size: 16px;
+    color: #858796;
+}
+
+.content__commentators-box {
+    margin-bottom: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-search-result {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    top: 40px;
+}
+
+.header-search-result-item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    padding: 10px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.header-search-result-item:last-child {
+    border-bottom: 0;
+}
+
+.header-search:hover .header-search-result {
+    display: block;
+}
